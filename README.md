@@ -1,0 +1,1 @@
+# Criptograf-a_2026-1-
