@@ -1,64 +1,37 @@
-# Cifrado César con Ñ y acentos (ASCII extendido)
+# Práctica 1 - Cifrado César con Ñ y acentos (ASCII extendido)
 
+### 👥 Colaboradores
 
+- **Chagoya González Leonardo**
+- **Camacho Garduño Miguel Ángel**
+- **Gómez Urbano Mariana**
+- **Hernández Nava Luisa Fernanda**
+- **Vieyra Márquez Andrea**
 
-Este programa implementa el Cifrado César en C, permitiendo el cifrado y descifrado de textos que incluyen la letra Ñ y vocales acentuadas en ASCII extendido.
+## ¿Qué es lo que hicimos?
 
+Este programa implementa el Cifrado César en C, permitiendo el cifrado y descifrado de textos que incluyen la letra Ñ y vocales acentuadas en ASCII extendido, preservando caracteres no alfabéticos.
 
+## ¿Cómo lo hicimos?
 
-## Requisitos
+- Se definieron dos arreglos (`ALFABETO_MAY`, `ALFABETO_MIN`) con 32 símbolos cada uno (las 27 letras del alfabeto español + 5 vocales acentuadas) usando códigos ASCII extendidos para incluir Ñ y acentos.
 
+- Se implementó `codificarCaracter` para obtener el índice de una letra en el alfabeto y `decodificarPosicion` para convertir un índice a carácter.
 
+- Las funciones `cifrarCesar` y `descifrarCesar` aplican desplazamiento modular `(pos ± llave) % LONGITUD_ALFABETO`, preservando mayúsculas/minúsculas y copiando literalmente caracteres no encontrados.
 
-- Compilador de C (GCC recomendado)
+La interfaz por consola utiliza `fgets` para leer texto, `scanf` para seleccionar opciones, y valida que la llave esté en el rango `1–31`.
 
-- Sistema operativo con soporte para compilación en C (Windows, Linux o macOS)
+## ¿Por qué lo hicimos?
 
-
-
-## Compilación y Ejecución
-
-
-
-### Compilar el código
-
-
-
-Para compilar el código fuente, utiliza el siguiente comando en la terminal:
-
-
-
-```sh
-
-gcc cifradoCesar.c -o cifradoCesar
-
-```
-
-
-
-### Ejecutar el programa
-
-
-
-Para ejecutar el programa, usa el siguiente comando:
-
-
-
-```sh
-
-./cifradoCesar
-
-```
-
-
+- Incluir Ñ y acentos garantiza que el algoritmo funcione correctamente con texto en español.
+- Usar índices y aritmética modular evita desbordes y permite el “recorrido circular” del alfabeto.
+- Mantener caracteres no alfabéticos facilita usar frases, signos y espacios sin alterar su formato.
+- La validación de la llave evita valores fuera del tamaño del alfabeto y errores en el cifrado/descifrado.
 
 ## Cómo usar el código
 
-
-
 Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifrar o descifrar un mensaje.
-
-
 
 1. **Elige una opción:**
 
@@ -67,16 +40,10 @@ Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifra
    - `2`: Descifrar un mensaje.
 
 2. **Ingresa el texto:** Debe contener solo caracteres alfabéticos, incluidos `Ñ` y vocales acentuadas.
-
 3. **Ingresa la llave:** Debe ser un número entre `1` y `31`. Este número define el desplazamiento en el cifrado César.
-
 4. **Resultado:** El programa imprimirá el texto cifrado o descifrado según la opción seleccionada.
 
-
-
 ### **Probar cifrado**
-
-
 
 1. Ejecutar el programa `./cifradoCesar`
 
@@ -88,30 +55,10 @@ Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifra
 
 5. Se mostrará el texto cifrado, por ejemplo: `KRÑD OXPGR`
 
-
-
 ### **Probar descifrado**
 
-
-
 1. Ejecutar el programa `./cifradoCesar`
-
 2. Seleccionar la opción `2` (Descifrar)
-
 3. Ingresar el texto cifrado, por ejemplo: `KRÑD OXPGR`
-
 4. Ingresar la misma llave usada en el cifrado, por ejemplo: `3`
-
 5. Se mostrará el texto descifrado: `HOLA MUNDO`
-
-
-
-## Notas
-
-
-
-- Solo se cifran caracteres alfabéticos, incluyendo `Ñ` y vocales acentuadas.
-
-- Los caracteres no alfabéticos permanecen sin cambios.
-
-- La clave debe estar en el rango `1-31` para un correcto funcionamiento.

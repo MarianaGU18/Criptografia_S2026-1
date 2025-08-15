@@ -46,3 +46,25 @@ Donde:
 - **Lenguaje:** C
 - **IDE:** Visual Studio
 - **Control de versiones:** Git / GitHub
+
+## Compilación y Ejecución
+
+### Compilar el código
+
+Para compilar el código fuente, utiliza el siguiente comando en la terminal:
+
+```sh
+
+gcc cifradoCesar.c -o cifradoCesar
+
+```
+
+### Ejecutar el programa
+
+Para ejecutar el programa, usa el siguiente comando:
+
+```sh
+
+./cifradoCesar
+
+```
