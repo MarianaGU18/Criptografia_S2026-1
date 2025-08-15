@@ -11,6 +11,7 @@ Aquí se subirán las prácticas realizadas en equipo, organizadas por carpetas 
 - **Camacho Garduño Miguel Ángel**
 - **Gómez Urbano Mariana**
 - **Hernández Nava Luisa Fernanda**
+- **Rosas Meza Isaías**
 - **Vieyra Márquez Andrea**
 
 ---
