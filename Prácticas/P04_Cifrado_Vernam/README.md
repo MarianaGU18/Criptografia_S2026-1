@@ -26,7 +26,7 @@ Así como la creación de archivos con el mensaje cifrado y la llave.
 
 - Almacenamiento en archivos: el mensaje cifrado se guarda en mensaje_cifrado.txt junto con su longitud, y la clave se guarda en clave.txt para permitir el proceso inverso.
 
--Descifrado: Se leen tanto el mensaje cifrado como la clave desde archivo. Cada letra se convierte a su valor numérico y se resta la clave (con módulo 26 para mantener el rango) y el resultado se traduce de vuelta en letra mayúscula, reconstruyendo el mensaje original.
+- Descifrado: Se leen tanto el mensaje cifrado como la clave desde archivo. Cada letra se convierte a su valor numérico y se resta la clave (con módulo 26 para mantener el rango) y el resultado se traduce de vuelta en letra mayúscula, reconstruyendo el mensaje original.
 
 ## ¿Por qué lo hicimos?
 
