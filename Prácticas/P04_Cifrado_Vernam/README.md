@@ -75,10 +75,10 @@ Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifra
 1. Ejecutar el programa `.\Cifrado_Vernam`
 2. Seleccionar la opción `2` (Descifrar)
 3. Se leen los archivos correspondientes, se muestra el mensaje cifrado y el original y se eliminan los archivos automáticamante:
-   -`Mensaje cifrado:   FTEQ K DSMCK NR WG ENLRV YP OVIWRCKVDYWE`
-   -`Mensaje descifrado: HOLA A TODOS EN LA CLASE DE CRIPTOGRAFIA`
-   -`Eliminando archivos utilizados...`
-   -`Archivo 'clave.txt' eliminado automaticamente.`
-   -`Archivo 'mensaje_cifrado.txt' eliminado automaticamente.`
-4. Se regresa al menú.
+   - `Mensaje cifrado:   FTEQ K DSMCK NR WG ENLRV YP OVIWRCKVDYWE`
+   - `Mensaje descifrado: HOLA A TODOS EN LA CLASE DE CRIPTOGRAFIA`
+   - `Eliminando archivos utilizados...`
+   - `Archivo 'clave.txt' eliminado automaticamente.`
+   - `Archivo 'mensaje_cifrado.txt' eliminado automaticamente.`
+5. Se regresa al menú.
 
