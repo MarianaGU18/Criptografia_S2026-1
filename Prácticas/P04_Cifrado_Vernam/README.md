@@ -1,5 +1,6 @@
 # Práctica 4 - Cifrado Vernam
 
+[Código fuente de Cifrado Vernam](https://github.com/MarianaGU18/Criptografia_S2026-1/tree/main/Pr%C3%A1cticas/P04_Cifrado_Vernam)
 
 ### 👥 Colaboradores
 
@@ -13,16 +14,16 @@
 ## ¿Qué es lo que hicimos?
 
 Este programa implementa en lenguaje en C el cifrado Vernam completo con funciones de cifrado y descifrado y un menú de consola para elegir la operación (cifrar/descifrar/salir).
-Así como la creación de archivos con el mensaje cifrado y la llave. 
+Así como la creación de archivos con el mensaje cifrado y la llave.
 
 ## ¿Cómo lo hicimos?
 
 - Entrada y limpieza del mensaje: se pide al usuario un texto, y si contiene salto de línea al final se elimina. Los caracteres no alfabéticos se mantienen sin cambios para no perder información.
 
 - Generación de la clave: se usa rand() con srand(time(NULL)) para obtener una secuencia pseudoaleatoria de números entre 0 y 25, uno por cada carácter del mensaje. Esta clave se guarda en un archivo para poder descifrar después.
- 
+
 - Cifrado carácter por carácter: Se convierte cada letra del mensaje a mayúscula y se obtiene su posición en el alfabeto (A=0 ... Z=25). A cada posición se le suma el valor de la clave correspondiente y se aplica módulo 26.
- Finalmente el resultado se convierte nuevamente en letra ('A' + valor).
+  Finalmente el resultado se convierte nuevamente en letra ('A' + valor).
 
 - Almacenamiento en archivos: el mensaje cifrado se guarda en mensaje_cifrado.txt junto con su longitud, y la clave se guarda en clave.txt para permitir el proceso inverso.
 
@@ -45,7 +46,7 @@ Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifra
    - `1`: Cifrar un mensaje.
 
    - `2`: Descifrar un mensaje.
-  
+
    - `3`: Salir.
 
    - Seleccione una opción:
@@ -64,11 +65,13 @@ Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifra
 3. Ingresar el mensaje a cifrar, por ejemplo: `Hola a todos en la clase de criptografia`
 
 4. Se mostrará la longitud del mensaje, el mensaje original y cifrado así como un texto donde indica la creación de los archivos, por ejemplo:
- - `Longitud del mensaje: 40 caracteres`
- - `Mensaje cifrado:  FTEQ K DSMCK NR WG ENLRV YP OVIWRCKVDYWE`
- - `Mensaje cifrado guardado en 'mensaje_cifrado.txt'`
- - `Clave guardada en 'clave.txt'`
-5. Se regresa al menú. 
+
+- `Longitud del mensaje: 40 caracteres`
+- `Mensaje cifrado:  FTEQ K DSMCK NR WG ENLRV YP OVIWRCKVDYWE`
+- `Mensaje cifrado guardado en 'mensaje_cifrado.txt'`
+- `Clave guardada en 'clave.txt'`
+
+5. Se regresa al menú.
 
 ### **Probar descifrado**
 
@@ -80,5 +83,4 @@ Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifra
    - `Eliminando archivos utilizados...`
    - `Archivo 'clave.txt' eliminado automaticamente.`
    - `Archivo 'mensaje_cifrado.txt' eliminado automaticamente.`
-5. Se regresa al menú.
-
+4. Se regresa al menú.

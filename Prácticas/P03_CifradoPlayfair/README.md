@@ -1,5 +1,6 @@
-
 # Práctica 3 - Cifrado Playfair
+
+[Código fuente de Cifrado Playfair](https://github.com/MarianaGU18/Criptografia_S2026-1/tree/main/Pr%C3%A1cticas/P03_CifradoPlayfair)
 
 ### 👥 Colaboradores
 
@@ -24,7 +25,6 @@ Este programa implementa en Python el cifrado Wheatstone o Playfair completo con
 
 - Reglas del algoritmo: para cada dígrafo se buscan posiciones en la tabla y se aplican las tres reglas clásicas — misma fila (desplazar columna +1 / −1), misma columna (desplazar fila +1 / −1) o formar rectángulo (intercambiar columnas). Se implementan versiones simétricas para cifrar y descifrar.
 
-
 ## ¿Por qué lo hicimos?
 
 - Consistencia/normalización: pasar a minúsculas y quitar espacios simplifica la búsqueda en la tabla y garantiza resultados reproducibles.
@@ -42,7 +42,7 @@ Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifra
    - `1`: Cifrar un mensaje.
 
    - `2`: Descifrar un mensaje.
-  
+
      **Seleccione una opción (1 o 2):**
 
 2. **Ingresa la clave:** Debe contener solo caracteres alfabéticos. **No se admiten las vocales acentuadas.**
