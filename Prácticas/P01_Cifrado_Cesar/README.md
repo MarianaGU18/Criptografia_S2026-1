@@ -32,7 +32,7 @@ La interfaz por consola utiliza `fgets` para leer texto, `scanf` para selecciona
 - Mantener caracteres no alfabéticos facilita usar frases, signos y espacios sin alterar su formato.
 - La validación de la llave evita valores fuera del tamaño del alfabeto y errores en el cifrado/descifrado.
 
-## Cómo usar el código
+## ¿Cómo usar el código?
 
 Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifrar o descifrar un mensaje.
 

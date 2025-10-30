@@ -37,7 +37,7 @@ Así como la creación de archivos con el mensaje cifrado y la llave.
 
 - Implementar el algoritmo Vernam (OTP): este cifrado es teóricamente irrompible cuando se usa una clave verdaderamente aleatoria, del mismo tamaño que el mensaje y empleada una sola vez.
 
-## Cómo usar el código
+## ¿Cómo usar el código?
 
 Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifrar o descifrar un mensaje.
 

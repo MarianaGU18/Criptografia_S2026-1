@@ -33,7 +33,7 @@ Este programa implementa en Python el cifrado Wheatstone o Playfair completo con
 
 - Reglas del dígrafo: aplicar las reglas de fila/columna/rectángulo es exactamente la mecánica del algoritmo Playfair — permite cifrar/descifrar sin depender de sustituciones por letra única.
 
-## Cómo usar el código
+## ¿Cómo usar el código?
 
 Al ejecutar el programa, se presentará un menú donde puedes elegir entre cifrar o descifrar un mensaje.
 
